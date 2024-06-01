@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background-image: linear-gradient(to right, #0f293d 0%, #dd7b57 100%);
+}
+ h1{
+    text-align: center;
+    margin: 1rem 0rem;
+    color: #b5d1e9;
+}
+.movie-container{
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+
+   
+}
+
+.movie{
+    width: 30%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    
+}
+.movie:hover{
+   transform: scale(1.02);
+}
+.about-movie{
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.about-movie img{
+    width: 100px;
+    height: 150px;
+}
+
+
+.about-movie img:hover{
+    transform: scale(2);
+}
+.movie-detail h4{
+    font-size: 20px;
+    font-family: Poppins , sans-serif;
+    line-height: 24px;
+    margin-bottom: 0.5rem;
+}
+.movie-detail p{
+    font-size: 16px;
+    font-family: Reddit Mono , sans-serif;
+    margin-bottom: 1rem;
+}
+.movie-type{
+    display: flex;
+
+    gap: 1rem;
+    align-items: center;
+    /* overflow-wrap: break-word; */
+}
+
+.movie-type .btn{
+   padding: 5px 8px;
+  background-color: rgb(28, 29, 29);
+  border-radius: 5px;
+  color: rgb(209, 207, 207);
+  font-size: 14px;
+}
+.movie-type p{
+    font-size: 15px;
+    color: blue;
+}
+.movie-desc {
+    padding: 0.5rem;
+}
+.movie-desc p{
+    font-size: 14px;
+    font-family: Raleway , sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0,.5);
+}
+
+@media screen and (max-width:1300px){
+    .movie {
+        width: 35%;
+    }
+}
+@media screen and (max-width:1200px){
+    .movie {
+        width: 45%;
+    }
+}
+@media screen and (max-width:920px){
+    .movie {
+        width: 48%;
+        padding: 0.5rem;
+    }
+    .movie-container{
+        padding: 1rem 1rem;
+    }
+}
+@media screen and (max-width:800px){
+    .movie {
+        width: 100%;
+     
+    }
+}
+@media screen and (max-width:500px){
+    .movie {
+        width: 100%;
+     
+    }
+    .movie-type{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
